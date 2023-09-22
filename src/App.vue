@@ -22,7 +22,6 @@ export default {
 </script>
 
 <template>
-  <h1>App vue</h1>
   <navBar></navBar>
   <mainContent></mainContent>
   <footerAboutUs></footerAboutUs>
@@ -30,9 +29,5 @@ export default {
 
 <style lang="scss" scoped>
 @use './assets/scss/partials/variables' as *;
-
-h1 {
-  color: $primary-color;
-}
 </style>
 

@@ -8,7 +8,7 @@ export default {
 
 <template>
     <div>
-        <h1 class="bg-secondary w-100">mainContent</h1>
+        <h1 class="bg-secondary w-100"> -- Content Goes here --</h1>
     </div>
 </template>
 

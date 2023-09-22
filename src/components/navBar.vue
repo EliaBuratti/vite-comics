@@ -1,14 +1,20 @@
 <script>
 export default {
-    name: 'navBar'
+    name: 'navBar',
+
+    data() {
+
+        return {
+
+            navSections: ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'],
+        }
+    }
 }
 </script>
 
 
 
 <template>
-    <h1 class="bg-secondary w-100">navBar</h1>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -23,8 +29,8 @@ export default {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li v-for="section in navSections" class="nav-item text-uppercase font-weight-bold">
+                        <a class="nav-link active" aria-current="page" href="#">{{ section }}</a>
                     </li>
                 </ul>
             </div>
