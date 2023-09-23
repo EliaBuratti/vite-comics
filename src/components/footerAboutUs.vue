@@ -128,6 +128,7 @@ export default {
 }
 
 ul>li:first-child {
+    font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
     color: $white-color;
@@ -136,6 +137,7 @@ ul>li:first-child {
 
 ul>li {
     text-transform: capitalize;
+    font-size: 0.9rem;
 
     a {
         color: $list-color;
