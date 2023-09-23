@@ -9,23 +9,23 @@ export default {
             cards: [
                 {
                     text: 'digital comics',
-                    image: './src/assets/img/buy-comics-digital-comics.png', // persorso da sistemare!!!
+                    image: './src/assets/img/buy-comics-digital-comics.png',
                 },
                 {
                     text: 'digital comics',
-                    image: './src/assets/img/buy-comics-merchandise.png', // persorso da sistemare!!!
+                    image: './src/assets/img/buy-comics-merchandise.png',
                 },
                 {
                     text: 'digital comics',
-                    image: './src/assets/img/buy-comics-subscriptions.png', // persorso da sistemare!!!
+                    image: './src/assets/img/buy-comics-subscriptions.png',
                 },
                 {
                     text: 'digital comics',
-                    image: './src/assets/img/buy-comics-shop-locator.png', // persorso da sistemare!!!
+                    image: './src/assets/img/buy-comics-shop-locator.png',
                 },
                 {
                     text: 'digital comics',
-                    image: './src/assets/img/buy-dc-power-visa.svg', // persorso da sistemare!!!
+                    image: './src/assets/img/buy-dc-power-visa.svg',
                 },
             ]
         }
@@ -41,7 +41,7 @@ export default {
             <h2>Content goes here</h2>
         </div>
     </div>
-    <div class="aboutUs">
+    <div class="more">
         <div class="container d-flex">
             <div v-for="card in cards" class="col my-5">
                 <img :src="card.image" :alt="card.text" class="m-3">
@@ -56,7 +56,7 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-.aboutUs {
+.more {
     background-color: $primary-color;
 
     & img {
