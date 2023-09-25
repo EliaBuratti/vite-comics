@@ -1,67 +1,21 @@
 <script>
+import socials from "../dataJs/socials.js";
+import listsInfo from "../dataJs/listsInfo.js";
+
 export default {
     name: 'footerAboutUs',
 
+    components: {
+        socials,
+        listsInfo,
+    },
+
     data() {
         return {
-            listsFooter: [
-                {
-                    listTitle: 'dc comics',
-                    lists: [
-                        { name: 'characters', link: '##' },
-                        { name: 'comics', link: '##' },
-                        { name: 'Movies', link: '##' },
-                        { name: 'TV', link: '##' },
-                        { name: 'Games', link: '##' },
-                        { name: 'Videos', link: '##' },
-                        { name: 'news', link: '##' },
-                    ],
-                },
-                {
-                    listTitle: 'shop',
-                    lists: [
-                        { name: 'shop DC', link: '##' },
-                        { name: 'shop DC collectibles', link: '##' },
-
-                    ]
-                },
-                {
-                    listTitle: 'dc',
-                    lists: [
-                        { name: 'therms of use', link: '##' },
-                        { name: 'privacy policy (New)', link: '##' },
-                        { name: 'ad choices', link: '##' },
-                        { name: 'jobs', link: '##' },
-                        { name: 'subscriptions', link: '##' },
-                        { name: 'talent workshops', link: '##' },
-                        { name: 'CPSC certificates', link: '##' },
-                        { name: 'ratings', link: '##' },
-                        { name: 'shop help', link: '##' },
-                        { name: 'contact us', link: '##' },
-                    ]
-                },
-                {
-                    listTitle: 'sites',
-                    lists: [
-                        { name: 'DC', link: '##' },
-                        { name: 'MAD magazine', link: '##' },
-                        { name: 'DC kids', link: '##' },
-                        { name: 'DC universe', link: '##' },
-                        { name: 'DC power visa', link: '##' },
-
-                    ]
-                },
-            ],
-
-            socials: [
-                { name: 'facebook', img: './src/assets/img/footer-facebook.png', link: '##' },
-                { name: 'twitter', img: './src/assets/img/footer-twitter.png', link: '##' },
-                { name: 'youtube', img: './src/assets/img/footer-youtube.png', link: '##' },
-                { name: 'pinterest', img: './src/assets/img/footer-pinterest.png', link: '##' },
-                { name: 'periscope', img: './src/assets/img/footer-periscope.png', link: '##' },
-            ]
+            socials: socials,
+            listsInfo: listsInfo,
         }
-    }
+    },
 }
 </script>
 
@@ -75,7 +29,7 @@ export default {
             <!-- list group -->
             <div class="eb_container-lists col-5 py-4">
                 <!-- single list -->
-                <ul v-for="list in listsFooter" class="eb_list ps-0 pb-2">
+                <ul v-for="list in listsInfo" class="eb_list ps-0 pb-2">
                     <li class="list-unstyled"> {{ list.listTitle }} </li>
                     <li v-for="object in list.lists" class="list-unstyled">
                         <a :href="object.link" class="text-decoration-none">
@@ -136,6 +90,7 @@ export default {
         column-gap: 1rem;
     }
 
+    /* mansory layout */
     .eb_list {
         margin: 0;
         display: grid;
@@ -143,6 +98,7 @@ export default {
         break-inside: avoid;
     }
 
+    /* end mansory layout */
 
 }
 

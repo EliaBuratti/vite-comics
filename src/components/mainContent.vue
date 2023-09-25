@@ -1,33 +1,15 @@
 <script>
+import cards from '../dataJs/cards.js'
 export default {
     name: 'mainContent',
 
+    components: {
+        cards,
+    },
     data() {
 
         return {
-
-            cards: [
-                {
-                    text: 'digital comics',
-                    image: './src/assets/img/buy-comics-digital-comics.png',
-                },
-                {
-                    text: 'digital comics',
-                    image: './src/assets/img/buy-comics-merchandise.png',
-                },
-                {
-                    text: 'digital comics',
-                    image: './src/assets/img/buy-comics-subscriptions.png',
-                },
-                {
-                    text: 'digital comics',
-                    image: './src/assets/img/buy-comics-shop-locator.png',
-                },
-                {
-                    text: 'digital comics',
-                    image: './src/assets/img/buy-dc-power-visa.svg',
-                },
-            ]
+            cards: cards.cards,
         }
     }
 }
