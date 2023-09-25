@@ -1,25 +1,28 @@
 <script>
-import thumbs from '../dataJs/dcComicsThumb'
 export default {
-    name: 'thumbs',
+    name: 'comicCard',
 
-    components: {
-        thumbs,
+    props: {
+        thumb: String,
+        price: String,
+        series: String,
+        type: String,
     },
 
-    data() {
-        return {
-            thumbs: thumbs,
-        }
-    }
 
 }
 </script>
 
 
 <template>
-    <h1>ciao mondo</h1>
+    <h1>{{ price }}</h1>
 </template>
 
 
 <style lang="scss" scoped></style>
+
+
+
+
+
+
