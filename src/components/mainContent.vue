@@ -18,11 +18,6 @@ export default {
 
 
 <template>
-    <div class="more_content">
-        <div class="container p-3">
-            <h2>Content goes here</h2>
-        </div>
-    </div>
     <div class="more">
         <div class="container d-flex">
             <div v-for="card in cards" class="col my-5">

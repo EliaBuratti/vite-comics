@@ -1,5 +1,6 @@
 <script>
 import navBar from './components/navBar.vue';
+import comicCard from './components/comicCard.vue';
 import mainContent from './components/mainContent.vue';
 import footerAboutUs from './components/footerAboutUs.vue';
 
@@ -13,6 +14,7 @@ export default {
   },
   components: { // da inserire tutti gli import che faccio
     navBar,
+    comicCard,
     mainContent,
     footerAboutUs,
   }
@@ -23,6 +25,7 @@ export default {
 
 <template>
   <navBar></navBar>
+  <comicCard></comicCard>
   <mainContent></mainContent>
   <footerAboutUs></footerAboutUs>
 </template>
