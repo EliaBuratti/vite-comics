@@ -45,28 +45,5 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-.eb_logo img {
-    width: 5rem;
-    height: 5rem;
-}
-
-.eb_nav-section {
-
-    li {
-        font-size: 0.9rem;
-        font-weight: bolder;
-
-        a {
-            padding-bottom: 3rem;
-            padding-top: 3rem;
-        }
-
-        :hover {
-
-            border-bottom: 5px solid $primary-color;
-            color: $primary-color;
-        }
-
-    }
-}
+@use '../assets/scss/partials/nav-bar' as *;
 </style>

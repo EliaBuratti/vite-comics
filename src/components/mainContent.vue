@@ -38,21 +38,5 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-.more {
-    background-color: $primary-color;
-
-    & img {
-        height: 3.5rem;
-    }
-
-    & span {
-        font-size: 1rem;
-    }
-}
-
-.more_content {
-    height: 8rem;
-    background-color: $black-color;
-    color: $white-color;
-}
+@use '../assets/scss/partials/main-content' as *;
 </style>
