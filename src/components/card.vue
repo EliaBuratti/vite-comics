@@ -23,7 +23,7 @@ export default {
     <div class="eb_jumbotron">
 
         <div class=" eb_cards p-5">
-            <div class="container d-flex flex-wrap gap-4 align-items-center justify-content-center">
+            <div class="container d-flex flex-wrap gap-4 justify-content-center">
                 <comicCard v-for="thumb in thumbsCard" :thumb="thumb.thumb" :price="thumb.price" :series="thumb.series"
                     :type="thumb.type" />
             </div>

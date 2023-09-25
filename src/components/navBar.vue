@@ -15,15 +15,14 @@ export default {
 
 
 <template>
-    <div class="container px-0">
+    <div class="container px-0 pt-2">
         <nav class="navbar navbar-expand-lg p-0">
-            <div class="container">
-                <a class="navbar-brand eb_logo" href="#">
-                    <img src="../assets/img/dc-logo.png" alt="Logo" width="30" height="30"
-                        class="d-inline-block align-text-top">
-                </a>
-            </div>
-            <div class="eb_nav-section">
+            <a class="navbar-brand eb_logo" href="#">
+                <img src="../assets/img/dc-logo.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top">
+            </a>
+
+            <div class="ms-auto eb_nav-section">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

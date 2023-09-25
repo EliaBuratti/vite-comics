@@ -16,7 +16,9 @@ export default {
 
 <template>
     <div class="eb_card">
-        <img :src="thumb" :alt="series">
+        <div class="cover">
+            <img :src="thumb" :alt="series">
+        </div>
         <p>{{ series }}</p>
     </div>
 </template>
@@ -26,13 +28,13 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .eb_card {
-    width: 12rem;
+    max-width: 12rem;
     color: $white-color;
     text-transform: uppercase;
     word-wrap: break-word;
 
     img {
-        width: 12rem;
+        width: 13rem;
         aspect-ratio: 1 / 1;
         object-fit: cover;
     }
