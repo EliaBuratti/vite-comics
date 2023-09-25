@@ -15,11 +15,29 @@ export default {
 
 
 <template>
-    <h1>{{ price }}</h1>
+    <div class="eb_card">
+        <img :src="thumb" :alt="series">
+        <p>{{ series }}</p>
+    </div>
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
+.eb_card {
+    width: 12rem;
+    color: $white-color;
+    text-transform: uppercase;
+    word-wrap: break-word;
+
+    img {
+        width: 12rem;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+</style>
 
 
 
