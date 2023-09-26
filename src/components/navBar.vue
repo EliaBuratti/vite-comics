@@ -15,7 +15,7 @@ export default {
 
 
 <template>
-    <div class="container px-0 pt-2">
+    <div class="container p-0 pt-2">
         <nav class="navbar navbar-expand-lg p-0">
             <a class="navbar-brand eb_logo" href="#">
                 <img src="../assets/img/dc-logo.png" alt="Logo" width="30" height="30"

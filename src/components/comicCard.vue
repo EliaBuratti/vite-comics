@@ -10,6 +10,7 @@ export default {
     },
 
 
+
 }
 </script>
 
@@ -28,13 +29,13 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .eb_card {
-    max-width: 12rem;
+    max-width: 10rem;
     color: $white-color;
     text-transform: uppercase;
     word-wrap: break-word;
 
     img {
-        width: 13rem;
+        width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
     }

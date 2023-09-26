@@ -11,6 +11,11 @@ export default {
         return {
             cards: cards.cards,
         }
+    },
+    methods: {
+        getImagePath: function (img) {
+            return new URL(`../assets/img/${img}`, import.meta.url).href;
+        }
     }
 }
 </script>
@@ -19,10 +24,10 @@ export default {
 
 <template>
     <div class="more">
-        <div class="container d-flex">
-            <div v-for="card in cards" class="col my-5">
-                <img :src="card.image" :alt="card.text" class="m-3">
-                <span class="text-white text-uppercase">{{ card.text }}</span>
+        <div class="container d-flex flex-wrap justify-content-center">
+            <div v-for="card in cards" class="col-5 col-lg  my-5">
+                <img :src="getImagePath(card.image)" :alt="card.text" class="m-3">
+                <span class="text-white text-uppercase ">{{ card.text }}</span>
             </div>
 
         </div>

@@ -16,6 +16,11 @@ export default {
             listsInfo: listsInfo,
         }
     },
+    methods: {
+        getImagePath: function (img) {
+            return new URL(`../assets/img/${img}`, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -24,10 +29,10 @@ export default {
 <template>
     <!-- info and sites shop -->
     <div class="info-shop">
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex flex-wrap justify-content-between">
 
             <!-- list group -->
-            <div class="eb_container-lists col-5 py-4">
+            <div class="eb_container-lists col-12 col-md-5 py-4">
                 <!-- single list -->
                 <ul v-for="list in listsInfo" class="eb_list ps-0 pb-2">
                     <li class="list-unstyled"> {{ list.listTitle }} </li>
@@ -40,7 +45,7 @@ export default {
             </div>
 
             <!-- logo -->
-            <div class="col-6 eb_logo"></div>
+            <div class=" d-none d-sm-block col-md-6 eb_logo"></div>
 
         </div>
     </div>
@@ -58,10 +63,10 @@ export default {
 
             <!-- socials -->
             <div class="social d-flex">
-                <h2 class="pe-4">follow us</h2>
-                <div v-for="social in socials" class="logo px-2">
-                    <a href="##">
-                        <img :src="social.img" :alt="social.name">
+                <h2 class="pe-4 text-center text-sm-start">follow us</h2>
+                <div class="logo px-2 d-flex flex-wrap gap-2">
+                    <a v-for="social in socials" href="##">
+                        <img :src="getImagePath(social.img)" :alt="social.name">
                     </a>
                 </div>
             </div>

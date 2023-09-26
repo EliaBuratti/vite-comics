@@ -1,8 +1,8 @@
 @use './variables.scss' as *;
 
 .eb_logo img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .eb_nav-section {
@@ -12,8 +12,8 @@
         font-weight: bolder;
 
         a {
-            padding-bottom: 3rem;
-            padding-top: 3rem;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
         }
 
         :hover {
